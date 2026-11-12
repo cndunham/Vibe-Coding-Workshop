@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coding Workshop 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <span class="nav__name">Vibe Coding Workshop 2026</span>
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu" role="list">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#github">GitHub</a></li>
+          <li><a href="#install">Install</a></li>
+          <li><a href="#apikey">API Key</a></li>
+          <li><a href="#build">Build</a></li>
+          <li><a href="#deploy">Deploy</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ── Hero ─────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container">
+        <h1>Vibe Coding<br>Workshop</h1>
+        <p class="hero__sub">Build and launch your personal website using AI — in one session. No prior experience required.</p>
+        <a href="#overview" class="btn btn--primary">Get started ↓</a>
+      </div>
+    </section>
+
+    <!-- ── Overview ──────────────────────────────────────────────── -->
+    <section class="section" id="overview">
+      <div class="container">
+        <div class="section__lead">
+          <h2>What We're Building Today</h2>
+          <p>By the end of this workshop you'll have a live personal website — written with AI assistance and published on the internet for free on your own GitHub account.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">⚙️</div>
+            <h3>Set Up Claude Code</h3>
+            <p>Install Anthropic's AI coding assistant and configure your API key.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">🏗️</div>
+            <h3>Build Your Site</h3>
+            <p>Describe what you want in plain English. Claude Code writes the code.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon" aria-hidden="true">🌐</div>
+            <h3>Go Live</h3>
+            <p>Publish your site for free on GitHub Pages. Your own URL, yours to keep.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── What You Need ─────────────────────────────────────────── -->
+    <section class="section section--alt" id="prereqs">
+      <div class="container">
+        <div class="section__lead">
+          <h2>What You Need</h2>
+          <p>Your instructor will provide an API key. Everything else is free — setup instructions are below.</p>
+        </div>
+        <div class="needs">
+          <div class="needs__item">
+            <span class="needs__num" aria-hidden="true">01</span>
+            <div>
+              <strong>A computer with internet access</strong>
+              <p>Mac, Windows, or Linux — all supported.</p>
+            </div>
+          </div>
+          <div class="needs__item">
+            <span class="needs__num" aria-hidden="true">02</span>
+            <div>
+              <strong>A GitHub account</strong>
+              <p>Free at github.com — takes two minutes to create.</p>
+            </div>
+          </div>
+          <div class="needs__item">
+            <span class="needs__num" aria-hidden="true">03</span>
+            <div>
+              <strong>Claude Code installed</strong>
+              <p>Anthropic's AI coding tool — one copy-and-paste command. Nothing else to install first.</p>
+            </div>
+          </div>
+          <div class="needs__item">
+            <span class="needs__num" aria-hidden="true">04</span>
+            <div>
+              <strong>An API key</strong>
+              <p>Provided by your instructor at the start of the session.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Step 1: GitHub ────────────────────────────────────────── -->
+    <section class="section" id="github">
+      <div class="container">
+        <div class="step-hd">
+          <span class="step-badge">Step 1</span>
+          <h2>Create a GitHub Account</h2>
+          <p>GitHub is where your website will live. It's free and you'll keep this account after the workshop.</p>
+          <p class="already">Already have a GitHub account? <a href="#install">Skip to Step 2 →</a></p>
+        </div>
+        <ol class="steps" aria-label="GitHub account setup">
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">1</span>
+            <div class="steps__body">
+              <strong>Go to <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com</a></strong>
+              <p>Click <em>Sign up</em> in the top-right corner.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">2</span>
+            <div class="steps__body">
+              <strong>Enter your email address</strong>
+              <p>Any email address works fine.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">3</span>
+            <div class="steps__body">
+              <strong>Choose a username carefully</strong>
+              <p>This becomes your website URL: <code>yourusername.github.io</code>. Your username will be public — anyone who visits your site will see it — so pick something you're happy to share.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">4</span>
+            <div class="steps__body">
+              <strong>Verify your email</strong>
+              <p>GitHub sends a confirmation link. Click it to activate your account.</p>
+            </div>
+          </li>
+          <li class="steps__item steps__item--check">
+            <span class="steps__num" aria-hidden="true">✓</span>
+            <div class="steps__body">
+              <strong>You have a GitHub account!</strong>
+              <p>Leave this browser tab open — you'll need it again in Step 5.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── Step 2: Install Claude Code ──────────────────────────── -->
+    <section class="section section--alt" id="install">
+      <div class="container">
+        <div class="step-hd">
+          <span class="step-badge">Step 2</span>
+          <h2>Install Claude Code</h2>
+          <p>Claude Code is a command-line AI assistant that reads and writes code alongside you. It runs in your terminal.</p>
+        </div>
+
+        <div class="substep">
+          <h3>First: open your terminal</h3>
+          <div class="os-row">
+            <div class="os-box">
+              <strong>How to open your terminal</strong>
+              <p><strong>Mac:</strong> Press <kbd>⌘ Space</kbd>, type <em>Terminal</em>, press Enter.</p>
+              <p><strong>Windows:</strong> Press <kbd>⊞ Win</kbd>, type <em>PowerShell</em>, press Enter.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="substep">
+          <h3>Install Claude Code</h3>
+          <p>Copy the command for <strong>your</strong> computer, paste it into your terminal, and press Enter.</p>
+          <p><strong>Mac or Linux (Terminal):</strong></p>
+          <div class="terminal"><code>curl -fsSL https://claude.ai/install.sh | bash</code></div>
+          <p><strong>Windows (PowerShell):</strong></p>
+          <div class="terminal"><code>irm https://claude.ai/install.ps1 | iex</code></div>
+          <p>The installer shows no progress while it downloads, so it may look frozen for a minute. That's normal. Wait until you see the prompt again.</p>
+          <p>When it finishes, <strong>close your terminal window and open a new one</strong>, then check that it worked:</p>
+          <div class="terminal"><code>claude --version</code></div>
+          <p>You should see a version number. You're ready for Step 3. If you see "command not found" or "not recognized," make sure you opened a new terminal window, then ask your instructor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Step 3: API Key ───────────────────────────────────────── -->
+    <section class="section" id="apikey">
+      <div class="container">
+        <div class="step-hd">
+          <span class="step-badge">Step 3</span>
+          <h2>Set Your Key and Start Claude Code</h2>
+          <p>Your instructor will give you an API key. This is what allows Claude Code to connect to Anthropic's AI — without it, the tool won't work.</p>
+        </div>
+        <ol class="steps" aria-label="API key setup">
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">1</span>
+            <div class="steps__body">
+              <strong>Get your key from your instructor</strong>
+              <p>It looks like: <code>sk-ant-api03-…</code></p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">2</span>
+            <div class="steps__body">
+              <strong>Set your key in the terminal</strong>
+              <p>Copy the command for your computer, replace <em>your-key-here</em> with your key (keep the single quotes around it), and press Enter. Nothing visible happens — that's normal.</p>
+              <p><strong>Mac or Linux (Terminal):</strong></p>
+              <div class="terminal"><code>export ANTHROPIC_API_KEY='your-key-here'</code></div>
+              <p><strong>Windows (PowerShell):</strong></p>
+              <div class="terminal"><code>$env:ANTHROPIC_API_KEY = 'your-key-here'</code></div>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">3</span>
+            <div class="steps__body">
+              <strong>Create a project folder</strong>
+              <p>In the same terminal window (so your key is still set), make a folder for your website and move into it:</p>
+              <div class="terminal"><code>mkdir my-website
+cd my-website</code></div>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">4</span>
+            <div class="steps__body">
+              <strong>Start Claude Code in your project</strong>
+              <div class="terminal"><code>claude</code></div>
+              <p>Claude Code notices your key and asks whether you want to use it. Choose <strong>Yes</strong>. It may also ask a couple of quick setup questions — the default answers are fine.</p>
+            </div>
+          </li>
+          <li class="steps__item steps__item--check">
+            <span class="steps__num" aria-hidden="true">✓</span>
+            <div class="steps__body">
+              <strong>You're connected to Claude!</strong>
+              <p>You should see the Claude Code prompt. Type <code>/help</code> to explore, or keep reading to start building.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="callout">
+          <strong>⏱ Your key only lasts for this terminal window.</strong> If you close it or open a new window, run the command from step 2 again before starting <code>claude</code>. If Claude Code asks you to log in through a browser, that's the sign you need to set the key again.
+        </div>
+        <div class="callout">
+          <strong>🔒 Keep your key private.</strong> Only ever paste it into the terminal command above. Never paste it into a file, a chat message, or a screenshot — and never put it anywhere in your project folder, because that folder gets uploaded to a public website in Step 5. If you think it was exposed, let your instructor know immediately.
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Step 4: Build ─────────────────────────────────────────── -->
+    <section class="section section--alt" id="build">
+      <div class="container">
+        <div class="step-hd">
+          <span class="step-badge">Step 4</span>
+          <h2>Build Your Website</h2>
+          <p>This is the fun part. You describe what you want in plain English — Claude Code writes the code, creates the files, and you preview the result in your browser.</p>
+        </div>
+        <ol class="steps" aria-label="Website building steps">
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">1</span>
+            <div class="steps__body">
+              <strong>Describe your site — try something like this</strong>
+              <p>Type this at the Claude Code prompt from Step 3. (Closed that window? Open a new one, set your key again, then run <code>cd my-website</code> and <code>claude</code>.)</p>
+              <div class="terminal terminal--prompt"><code>Create a personal website for me. My name is [Your Name]. Include an About Me section, a section for my interests or hobbies, and a contact link. Use a modern, clean design. Plain HTML and CSS, one page. Tell me your plan before you start.</code></div>
+              <p>Customize the prompt with your own details. Remember that your site will be public: for the contact link, use something like a LinkedIn profile or a school or work email, and leave out personal phone numbers, home addresses, and private email addresses.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">2</span>
+            <div class="steps__body">
+              <strong>Preview your site</strong>
+              <p>Find the <code>index.html</code> file Claude created in your <code>my-website</code> folder. Open a <strong>second</strong> terminal window (leave Claude Code running in the first), go to your folder with <code>cd my-website</code>, and run the command for your computer:</p>
+              <p><strong>Mac:</strong></p>
+              <div class="terminal"><code>open index.html</code></div>
+              <p><strong>Windows (PowerShell):</strong></p>
+              <div class="terminal"><code>start index.html</code></div>
+              <p>Or skip the terminal: find the file in Finder or File Explorer and double-click it (on a Mac you can also right-click → <em>Open With</em> → your browser).</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">3</span>
+            <div class="steps__body">
+              <strong>Keep refining with more prompts</strong>
+              <div class="terminal terminal--prompt"><code>Change the color scheme to something warmer. Add a photo placeholder at the top. Make the navigation stick when I scroll.</code></div>
+              <p>Reload your browser after each change to see the result. Keep going until you're happy.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── Step 5: Deploy ────────────────────────────────────────── -->
+    <section class="section" id="deploy">
+      <div class="container">
+        <div class="step-hd">
+          <span class="step-badge">Step 5</span>
+          <h2>Publish to GitHub Pages</h2>
+          <p>Upload your site to GitHub in your web browser to get a live URL — no extra software needed.</p>
+        </div>
+        <ol class="steps" aria-label="Deploy to GitHub Pages">
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">1</span>
+            <div class="steps__body">
+              <strong>Create a repository on GitHub</strong>
+              <p>Go to <a href="https://github.com/new" target="_blank" rel="noopener noreferrer">github.com/new</a>. Name it exactly: <code>yourusername.github.io</code> (use your actual GitHub username). Set it to <strong>Public</strong> and click <em>Create repository</em>.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">2</span>
+            <div class="steps__body">
+              <strong>Choose to upload files</strong>
+              <p>On your new, empty repository page, click the <em>uploading an existing file</em> link.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">3</span>
+            <div class="steps__body">
+              <strong>Drag in your website files</strong>
+              <p>Open your <code>my-website</code> folder in Finder or File Explorer. Select everything <strong>inside</strong> it and drag those files into the browser window — drag the contents, not the folder itself. <code>index.html</code> must sit at the top level of the repository, not inside a folder.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">4</span>
+            <div class="steps__body">
+              <strong>Click <em>Commit changes</em></strong>
+              <p>The green button at the bottom of the page. This saves your files to GitHub.</p>
+            </div>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num" aria-hidden="true">5</span>
+            <div class="steps__body">
+              <strong>Wait 1–2 minutes, then visit your URL</strong>
+              <div class="terminal"><code>https://yourusername.github.io</code></div>
+              <p>Not live yet? Click the <em>Actions</em> tab on your repository to watch it publish, or check <em>Settings → Pages</em>.</p>
+            </div>
+          </li>
+          <li class="steps__item steps__item--check">
+            <span class="steps__num" aria-hidden="true">✓</span>
+            <div class="steps__body">
+              <strong>Your site is live!</strong>
+              <p>Share the URL with anyone. It's on the internet for free, and yours to keep.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="callout">
+          <strong>🔄 Updating your site later</strong> Make your changes with Claude Code, then repeat steps 2–4: open your repository, click <em>Add file → Upload files</em>, and drag in the changed files. Files with the same name are replaced. Give it a minute or two, then reload your site.
+        </div>
+        <details class="optional">
+          <summary>Optional: publish with git instead (for people already comfortable with git)</summary>
+          <p>Use this <strong>instead of</strong> steps 2–4 above, not after them — your repository must still be empty. You'll need <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">git</a> installed. In your <code>my-website</code> folder, run:</p>
+          <div class="terminal"><code>git init
+git add .
+git commit -m "My first website"
+git branch -M main
+git remote add origin https://github.com/yourusername/yourusername.github.io.git
+git push -u origin main</code></div>
+          <p>Replace both instances of <em>yourusername</em> with your GitHub username. When GitHub asks you to sign in, your regular GitHub password won't work: use the browser sign-in window if one opens, or a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" target="_blank" rel="noopener noreferrer">personal access token</a>. If you get stuck, use the upload steps above instead.</p>
+          <p>To update later: <code>git add .</code>, <code>git commit -m "Update"</code>, <code>git push</code>.</p>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__name">Vibe Coding Workshop 2026</span>
+        <nav class="footer__links" aria-label="Footer resources">
+          <a href="https://code.claude.com/docs/en/setup" target="_blank" rel="noopener noreferrer">Claude Code Docs</a>
+          <a href="https://code.claude.com/docs/en/terminal-guide" target="_blank" rel="noopener noreferrer">Terminal Guide</a>
+          <a href="https://docs.github.com/en/pages" target="_blank" rel="noopener noreferrer">GitHub Pages Docs</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
