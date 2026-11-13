@@ -189,7 +189,21 @@
           <p>The installer shows no progress while it downloads, so it may look frozen for a minute. That's normal. Wait until you see the prompt again.</p>
           <p>When it finishes, <strong>close your terminal window and open a new one</strong>, then check that it worked:</p>
           <div class="terminal"><code>claude --version</code></div>
-          <p>You should see a version number. You're ready for Step 3. If you see "command not found" or "not recognized," make sure you opened a new terminal window, then ask your instructor.</p>
+          <p>You should see a version number. You're ready for Step 3. If you see "command not found" or "not recognized," make sure you opened a new terminal window. Still not working? See the troubleshooting box below.</p>
+        </div>
+
+        <div class="callout">
+          <strong>🛠 Troubleshooting: "command not found" even in a new window</strong>
+          <p>The install probably worked, but your terminal doesn't know where to find Claude Code yet. The installer puts it in a folder called <code>.local/bin</code> inside your home folder, and that folder needs to be on your computer's search path (called <em>PATH</em>).</p>
+          <p><b>Mac:</b> first check that it's installed:</p>
+          <div class="terminal"><code>ls ~/.local/bin/claude</code></div>
+          <p>If that shows the file, add the folder to your PATH and reload your settings:</p>
+          <div class="terminal"><code>echo 'export PATH="$HOME/.local/bin:$PATH"' &gt;&gt; ~/.zshrc &amp;&amp; source ~/.zshrc</code></div>
+          <p><b>Windows (PowerShell):</b> first check that it's installed (you should see <code>True</code>):</p>
+          <div class="terminal"><code>Test-Path "$env:USERPROFILE\.local\bin\claude.exe"</code></div>
+          <p>If it says <code>True</code>, add the folder to your PATH, then close PowerShell and open a new window:</p>
+          <div class="terminal"><code>[Environment]::SetEnvironmentVariable('Path', [Environment]::GetEnvironmentVariable('Path','User') + ";$env:USERPROFILE\.local\bin", 'User')</code></div>
+          <p>Then run <code>claude --version</code> again. If the first check finds nothing, the install didn't finish: run the install command again and wait for the prompt to come back. Still stuck? Ask your instructor.</p>
         </div>
       </div>
     </section>
